@@ -1,0 +1,24 @@
+sudo: required
+language: node_js
+node_js:
+  - "stable"
+services:
+  - docker
+
+cache:
+  directories:
+  - node_modules
+
+install:
+  - npm install
+
+before_script:
+  - echo "Branch... $TRAVIS_BRANCH"
+
+script:
+  - npm test
+
+deploy:
+  provider: heroku
+  api_key: "$HEROKU_API_KEY"
+  app: linkhub-danielloeh
