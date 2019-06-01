@@ -17,7 +17,7 @@ describe('hello world', () => {
             .get('/')
             .then((res) => {
                 res.should.have.status(200);
-                expect(res.text).to.equal('Hello World');
+                expect(res.text).to.equal('{message: \'Hello World\'}');
             })
             .catch(err => {
                 throw err
