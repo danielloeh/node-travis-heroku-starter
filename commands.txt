@@ -1,3 +1,0 @@
-docker build --tag=heroku-test .
-
-docker run -d -p 3000:3000 heroku-test
