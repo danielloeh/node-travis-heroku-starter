@@ -1,24 +1,25 @@
 # node-travis-heroku-starter
 
 ## Requirements
-###Tools
+
+### Tools
 - node.js
 - git
 - docker
-###Accounts
+
+### Accounts
 - github.com
 - travis-ci.org
 - heroku.com
 
 
-
-Run it local:
+### Run it local:
 - Run server: `npm start`
 - Run tests: `npm test`
 - Build docker image: `docker build --tag=heroku-test .`
 - Run docker image: `docker run -d -p 3000:3000 heroku-test`
 
-Run CI server & deploy:
+### Run CI server & deploy:
 - Push the code to your github
 - Allow travis-ci.org to access the github repository
 - Create a heroku app
